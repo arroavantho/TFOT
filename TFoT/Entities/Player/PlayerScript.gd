@@ -1,14 +1,9 @@
 extends KinematicBody2D
 
-
 export(int) var gravity=1000 
 export(int) var fall_speed=0
 export(int) var player_speed=300
 export(int) var jump_power= 500
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
 func _physics_process(delta): 
 	fall_speed += (gravity * delta)
